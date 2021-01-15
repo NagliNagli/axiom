@@ -4,7 +4,7 @@
 		"ext":"txt"
 	},
 	{
-		"command":"sudo masscan --rate=100000 -iL input -oX output",
+		"command":"sudo masscan -p 1-65535 --rate 100000 --wait 0 --open -iL input -oX output",
 		"ext":"xml"
 	}
 ]
